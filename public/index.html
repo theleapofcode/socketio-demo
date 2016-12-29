@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Socket Example</title>
+</head>
+
+<body>
+  <div>
+    <label for="userName">UserName:</label>
+    <input type="text" id="userName" />
+    <br/>
+    <label for="url">Socket server URL:</label>
+    <input type="text" id="url" value="http://localhost:3000" />
+    <br/>
+    <button id="connectBtn" type="button">Connect</button>
+    <br/>
+    <br/>
+    <label for="roomName">RoomName:</label>
+    <input type="text" id="roomName" />
+    <br/>
+    <button id="joinRoomBtn" type="button">Join Room</button> &nbsp;&nbsp;
+    <button id="leaveRoomBtn" type="button">Leave Room</button>
+    <br/>
+    <br/>
+    <div>Broadcast To All Users:</div>
+    <br/>
+    <label for="broadcastToAllUsersMessage">Message:</label>
+    <input type="text" id="broadcastToAllUsersMessage" />
+    <br/>
+    <button id="broadcastToAllUsersBtn" type="button">Broadcast to All Users</button>
+    <br/>
+    <br/>
+    <div>Broadcast To Room:</div>
+    <br/>
+    <label for="broadcastToRoomMessage">Message:</label>
+    <input type="text" id="broadcastToRoomMessage" />
+    <br/>
+    <button id="broadcastToRoomBtn" type="button">Broadcast to Room</button>
+    <br/>
+    <br/>
+    <div>Unicast To User:</div>
+    <br/>
+    <label for="unicastToUserUserName">To UserName:</label>
+    <input type="text" id="unicastToUserUserName" />
+    <br/>
+    <label for="unicastToUserMessage">Message:</label>
+    <input type="text" id="unicastToUserMessage" />
+    <br/>
+    <button id="unicastToUserBtn" type="button">Unicast To User</button>
+    <br/>
+    <br/>
+    <div>Multicast To Users:</div>
+    <br/>
+    <label for="multicastToUsersUserNames">To UserNames (comma separated):</label>
+    <input type="text" id="multicastToUsersUserNames" />
+    <br/>
+    <label for="multicastToUsersMessage">Message:</label>
+    <input type="text" id="multicastToUsersMessage" />
+    <br/>
+    <button id="multicastToUsersBtn" type="button">Multicast To Users</button>
+  </div>
+  <br/>
+  <br/>
+  <div>
+    <div id="statusMsg">
+      &nbsp;
+    </div>
+    <br/>
+    <br/>
+  </div>
+</body>
+
+</html>
