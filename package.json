@@ -4,11 +4,11 @@
   "description": "Demo of socket.io",
   "main": "index.js",
   "scripts": {
-    "socket-server:start": "babel-node server/socket-server.js",
+    "socket-server:start": "babel-node server/index.js",
     "start": "npm-run-all --parallel socket-server:start lint:watch site:start",
     "lint": "esw webpack.config.js, server, public --color",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress --compiler js:babel-register \"tests/**/*.test.js\"",
+    "test": "mocha --reporter spec --compilers js:babel-register \"tests/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "site:start": "webpack-dev-server --config webpack.config.babel.js",
     "socket-server1:start": "cross-env PORT=3000 npm run socket-server:start",

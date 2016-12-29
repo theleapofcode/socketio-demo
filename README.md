@@ -9,6 +9,7 @@ Demo of [Socket.io](http://socket.io/)
   * Unicast messages to a user across multiple nodes
   * Multicast messages to set of users across multiple nodes
   * Sample UI to playaround with the Features
+  * Sample mocha test to show how to unit test socket functions
 
 ## Steps to run the demo
   1. Clone the repo - `git clone https://github.com/theleapofcode/socketio-demo.git`

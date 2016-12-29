@@ -8,13 +8,10 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-const port = process.env.PORT || 3000;
 const redisHost = process.env.REDIS_HOST || 'localhost';
 const redisPort = process.env.REDIS_PORT || 6379;
 
 io.adapter(redis({ host: redisHost, port: redisPort }));
-
-server.listen(port, () => console.log(chalk.blue('Socket server listening on ' + port)));
 
 const ROOM_PREFIX = 'ROOM_';
 const USER_PREFIX = 'USER_';
@@ -65,3 +62,5 @@ io.sockets.on('connection', (socket) => {
   });
 
 });
+
+export default server;
